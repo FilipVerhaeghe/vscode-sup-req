@@ -1,0 +1,41 @@
+{
+	"name": "markdown-sup-req",
+	"version": "1.0.0",
+	"displayName": "Markdown Superscript & ID",
+	"description": "Adds ^superscript^ syntax support to VS Code's built-in markdown preview, and also requirement ID styling",
+	"keywords": [
+		"markdown",
+		"superscript",
+		"requirement"
+	],
+	"icon": "logo.png",
+    "publisher": "unmannedaero",
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/FilipVerhaeghe/vscode-sup-req.git"
+	},
+	"bugs": {
+		"url": "https://github.com/FilipVerhaeghe/vscode-sup-req/issues"
+	},
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"markdown.markdownItPlugins": true,
+		"markdown.previewStyles": [
+			"./req.css"
+		]
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.44.0",
+		"vsce": "^1.77.0"
+	},
+	"dependencies": {
+		"markdown-it-sup": "^1.0.0"
+	}
+}
